@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void birthday(char name[], int age)
+void birthday(char name[], int age)//taking parameters
 {
     printf("Happy birthday %s\n", name);
     printf("You are %d years old", age);
@@ -15,10 +15,10 @@ int main()
     printf("What is your name? : ");
     fgets(name, 30, stdin);
     name[strlen(name) - 1] = '\0';
-    printf("How old are you? : ");
+    printf("How old are you? : "); 
     scanf("%d", &age);
 
-    birthday(name, age);
+    birthday(name, age); //passing arguments
 
     return 0;
 
